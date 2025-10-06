@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
- "scripts": {
-  "start": "node server.js",
-  "dev": "nodemon server.js",
-  "build": "echo 'no build step required'"
-},
-
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
