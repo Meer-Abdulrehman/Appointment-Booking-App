@@ -21,12 +21,13 @@ app.use(express.json());
 // ✅ CORS configuration
 app.use(cors({
   origin: [
-    "https://appointment-booking-app-frontend-one.vercel.app",   // Frontend (user)
-    "https://appointment-booking-app-admin.vercel.app"        // Admin panel
+    "https://appointment-booking-app-frontend-one.vercel.app",   // deployed frontend
+    "https://appointment-booking-app-admin.vercel.app"           // deployed admin
   ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
+
 
 // ✅ API routes
 app.use('/api/admin', adminRouter);
