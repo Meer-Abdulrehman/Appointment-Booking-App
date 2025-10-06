@@ -295,8 +295,8 @@ export const paymentStripe = async (req, res) => {
         },
       ],
       mode: "payment",
-       success_url: `http://localhost:5173/receipt/${appointmentData._id}`,
-      cancel_url: "http://localhost:5173/my-appointments",
+       success_url: `https://appointment-booking-app-frontend-one.vercel.app/receipt/${appointmentData._id}`,
+      cancel_url: "https://appointment-booking-app-frontend-one.vercel.app/my-appointments",
     });
 
     // ✅ Save sessionId in appointment document
